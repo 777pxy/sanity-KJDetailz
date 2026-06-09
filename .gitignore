@@ -41,3 +41,5 @@ yarn-error.log*
 next-env.d.ts
 
 # Sanity
+sanity.config.ts
+sanity.cli.ts
