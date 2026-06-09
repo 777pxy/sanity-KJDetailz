@@ -7,11 +7,19 @@ export const gallaryImageType = defineType({
   fields: [
     defineField({
       name: 'image_name',
+      title: 'Image Name',
       type: 'string',
     }),
     defineField({
         name: 'image',
+        title: 'Image',
         type: 'image'
+    }),
+    defineField({
+      name: 'isVisible',
+      title: 'Display on site?',
+      type: 'boolean',
+      initialValue: true,
     })
   ],
 })

@@ -21,6 +21,12 @@ export const reviewType = defineType({
     name: 'stars',
     type: 'number',
     validation: (Rule) => Rule.min(0).max(5).integer(),
+    }),
+    defineField({
+      name: 'isVisible',
+      title: 'Display on site?',
+      type: 'boolean',
+      initialValue: true,
     })
   ],
 })

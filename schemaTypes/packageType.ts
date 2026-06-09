@@ -39,6 +39,12 @@ export const packageType = defineType({
     defineField({
       name: 'price',
       type: 'number',
+    }),
+    defineField({
+      name: 'isVisible',
+      title: 'Display on site?',
+      type: 'boolean',
+      initialValue: true,
     })
   ],
 })
