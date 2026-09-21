@@ -16,6 +16,13 @@ export const premiumServiceType = defineType({
       description: 'Short persuasive blurb shown on the premium services page.',
     }),
     defineField({
+      name: 'image',
+      title: 'Image',
+      type: 'image',
+      options: {hotspot: true},
+      description: 'Photo shown for this service on /premium-services and in the homepage preview.',
+    }),
+    defineField({
       name: 'package_services',
       type: 'array',
       of: [{type: 'string'}],
